@@ -1,0 +1,49 @@
+{
+	"tags": null,
+	"url": "files/mtl_shark41 (Normal).png",
+	"uOffset": 0,
+	"vOffset": 0,
+	"uScale": 1,
+	"vScale": 1,
+	"uAng": 0,
+	"vAng": 0,
+	"wAng": 0,
+	"uRotationCenter": 0.5,
+	"vRotationCenter": 0.5,
+	"wRotationCenter": 0.5,
+	"isBlocking": true,
+	"uniqueId": 401,
+	"name": "files/mtl_shark41 (Normal).png",
+	"metadata": {
+		"gltf": {
+			"pointers": [
+				"/materials/0/normalTexture"
+			],
+			"editorDone": true
+		},
+		"editorName": "mtl_shark41 (Normal).png",
+		"editorId": "2edbf67c-b9f2-40f5-9cbe-24c0a0787d7f"
+	},
+	"hasAlpha": false,
+	"getAlphaFromRGB": false,
+	"level": 1,
+	"coordinatesIndex": 0,
+	"coordinatesMode": 0,
+	"wrapU": 1,
+	"wrapV": 1,
+	"wrapR": 1,
+	"anisotropicFilteringLevel": 4,
+	"isCube": false,
+	"is3D": false,
+	"is2DArray": false,
+	"gammaSpace": true,
+	"invertZ": false,
+	"lodLevelInAlpha": false,
+	"lodGenerationOffset": 0,
+	"lodGenerationScale": 0,
+	"linearSpecularLOD": false,
+	"isRenderTarget": false,
+	"animations": [],
+	"invertY": false,
+	"samplingMode": 11
+}

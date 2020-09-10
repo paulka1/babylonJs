@@ -1,0 +1,49 @@
+{
+	"tags": null,
+	"url": "files/mtl_shark41 (Diffuse).png",
+	"uOffset": 0,
+	"vOffset": 0,
+	"uScale": 1,
+	"vScale": 1,
+	"uAng": 0,
+	"vAng": 0,
+	"wAng": 0,
+	"uRotationCenter": 0.5,
+	"vRotationCenter": 0.5,
+	"wRotationCenter": 0.5,
+	"isBlocking": true,
+	"uniqueId": 403,
+	"name": "files/mtl_shark41 (Diffuse).png",
+	"metadata": {
+		"gltf": {
+			"pointers": [
+				"/materials/0/extensions/KHR_materials_pbrSpecularGlossiness/diffuseTexture"
+			],
+			"editorDone": true
+		},
+		"editorName": "mtl_shark41 (Diffuse).png",
+		"editorId": "a1e8cdb4-3aba-495c-a03b-45a5e292b7c1"
+	},
+	"hasAlpha": false,
+	"getAlphaFromRGB": false,
+	"level": 1,
+	"coordinatesIndex": 0,
+	"coordinatesMode": 0,
+	"wrapU": 1,
+	"wrapV": 1,
+	"wrapR": 1,
+	"anisotropicFilteringLevel": 4,
+	"isCube": false,
+	"is3D": false,
+	"is2DArray": false,
+	"gammaSpace": true,
+	"invertZ": false,
+	"lodLevelInAlpha": false,
+	"lodGenerationOffset": 0,
+	"lodGenerationScale": 0,
+	"linearSpecularLOD": false,
+	"isRenderTarget": false,
+	"animations": [],
+	"invertY": false,
+	"samplingMode": 11
+}
