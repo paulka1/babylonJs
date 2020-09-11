@@ -8,9 +8,9 @@
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				3.049057151658374,
-				-0.04621888766018878,
-				1.9804652677883616
+				2.817101654028109,
+				-2.3560309761171183,
+				2.0299040817490788
 			],
 			"rotationQuaternion": [
 				0,
@@ -19,9 +19,9 @@
 				1
 			],
 			"scaling": [
-				1000,
+				100,
 				0.10000000149011612,
-				1000
+				100
 			],
 			"localMatrix": {
 				"0": 1,
@@ -54,7 +54,7 @@
 			"isUnIndexed": false,
 			"geometryId": "0d38a45c-03a7-4a42-bfc3-977788ff849d",
 			"subMeshes": null,
-			"materialId": "629b2a88-c0ce-4958-affd-a764169f911c",
+			"materialId": "2555eac3-b306-4631-ac0c-a82395850866",
 			"physicsMass": 0,
 			"physicsFriction": 0.2,
 			"physicsRestitution": 0,

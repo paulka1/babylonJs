@@ -1,15 +1,16 @@
 {
+	"materials": [],
 	"meshes": [
 		{
-			"name": "cylinder1",
-			"id": "15fd31de-be39-4fe5-acd0-d8ddc138d9fc",
-			"uniqueId": 13,
+			"name": "chemin1",
+			"id": "6160eecd-5b50-4a89-9aaf-d9ffe040e476",
+			"uniqueId": 51,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				-0.07813213020563126,
-				2.0359506607055664,
-				-0.6022365689277649
+				0,
+				0,
+				-7.264620780944824
 			],
 			"rotationQuaternion": [
 				0,
@@ -18,11 +19,11 @@
 				1
 			],
 			"scaling": [
-				1,
-				4,
-				1
+				8,
+				7,
+				8
 			],
-			"localMatrix": {
+			"pivotMatrix": {
 				"0": 1,
 				"1": 0,
 				"2": 0,
@@ -51,12 +52,13 @@
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
-			"geometryId": "9b1ae8fc-4735-422a-9d33-f134b78479d3",
+			"geometryId": "4deb41fe-1f9b-4ed4-99b2-57745c8a4e41",
 			"subMeshes": null,
-			"physicsMass": 50,
+			"materialId": "601e5f51-43f9-46d8-aa75-e2920be71d9a",
+			"physicsMass": 0,
 			"physicsFriction": 0.2,
-			"physicsRestitution": 50,
-			"physicsImpostor": 7,
+			"physicsRestitution": 0,
+			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
 				"script": {}
@@ -74,7 +76,7 @@
 				0
 			],
 			"applyFog": true,
-			"delayLoadingFile": "geometries/9b1ae8fc-4735-422a-9d33-f134b78479d3.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/4deb41fe-1f9b-4ed4-99b2-57745c8a4e41.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,
@@ -87,33 +89,33 @@
 			],
 			"_binaryInfo": {
 				"positionsAttrDesc": {
-					"count": 210,
+					"count": 72,
 					"stride": 3,
 					"offset": 0,
 					"dataType": 1
 				},
 				"normalsAttrDesc": {
-					"count": 210,
+					"count": 72,
 					"stride": 3,
-					"offset": 840,
+					"offset": 288,
 					"dataType": 1
 				},
 				"uvsAttrDesc": {
-					"count": 140,
+					"count": 48,
 					"stride": 2,
-					"offset": 1680,
+					"offset": 576,
 					"dataType": 1
 				},
 				"indicesAttrDesc": {
-					"count": 192,
+					"count": 36,
 					"stride": 1,
-					"offset": 2240,
+					"offset": 768,
 					"dataType": 0
 				},
 				"subMeshesAttrDesc": {
 					"count": 1,
 					"stride": 5,
-					"offset": 3008,
+					"offset": 912,
 					"dataType": 0
 				}
 			},
@@ -124,7 +126,6 @@
 			"indices": null
 		}
 	],
-	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

@@ -16,7 +16,7 @@ export declare class Game {
     /**
      * Loads the first scene.
      */
-    private _load;
+    _load(): void;
     /**
      * Binds the required events for a full experience.
      */

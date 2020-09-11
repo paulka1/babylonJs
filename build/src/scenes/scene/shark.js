@@ -41,6 +41,7 @@ var MyScript = /** @class */ (function (_super) {
     // @ts-ignore ignoring the super call as we don't want to re-init
     function MyScript() {
         var _this = this;
+        _this.aller = true;
         return _this;
     }
     /**
@@ -48,17 +49,47 @@ var MyScript = /** @class */ (function (_super) {
      * This function is called immediatly after the constructor has been called.
      */
     MyScript.prototype.onInitialize = function () {
-        // ... heay
     };
     /**
      * Called on the scene starts.
      */
     MyScript.prototype.onStart = function () {
+        // document.addEventListener("keydown",(ev)=>{
+        //     if(ev.key === "j"){
+        //         this.position.z += 1;
+        //     }
+        // })
+        this.position.x = -30;
+        this.position.y = -37;
+        this.position.z = -93;
     };
     /**
      * Called each frame.
      */
     MyScript.prototype.onUpdate = function () {
+        if (this.position.z < 97) {
+            this.position.z += 1;
+        }
+        if (this.position.z > 60 && this.position.y > -100) {
+            this.position.y -= 0.5;
+        }
+        else {
+            this.aller = false;
+        }
+        // if(!this.way){
+        //     this.position.z = 100
+        //     this.position.y = -100
+        //     if(this.position.z > -100){
+        //         this.position.z -= 1
+        //     }
+        //     if(this.position.z > 0 && this.position.y > -100){
+        //         this.position.y -= 0.5
+        //     }
+        //     else {
+        //         this.way = true;
+        //     }
+        // }
+        // }
     };
     /**
      * Called on a message has been received and sent from a graph.
@@ -74,6 +105,6 @@ var MyScript = /** @class */ (function (_super) {
         }
     };
     return MyScript;
-}(core_1.Node));
+}(core_1.Mesh));
 exports.default = MyScript;
 //# sourceMappingURL=shark.js.map

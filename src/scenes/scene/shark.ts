@@ -1,4 +1,4 @@
-import { Node } from "@babylonjs/core";
+import { Mesh } from "@babylonjs/core";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -18,7 +18,9 @@ import { Node } from "@babylonjs/core";
  * The function "onInitialize" is called immediately after the constructor is called.
  * The functions "onStart" and "onUpdate" are called automatically.
  */
-export default class MyScript extends Node {
+export default class MyScript extends Mesh {
+    aller: boolean = true;
+
     /**
      * Override constructor.
      * @warn do not fill.
@@ -31,20 +33,53 @@ export default class MyScript extends Node {
      * This function is called immediatly after the constructor has been called.
      */
     public onInitialize(): void {
-        // ... heay
+        
     }
 
     /**
      * Called on the scene starts.
      */
     public onStart(): void {
-        
+        // document.addEventListener("keydown",(ev)=>{
+        //     if(ev.key === "j"){
+        //         this.position.z += 1;
+        //     }
+        // })
+        this.position.x = -30;
+        this.position.y = -37;
+        this.position.z = -93;
     }
 
     /**
      * Called each frame.
      */
     public onUpdate(): void {
+        
+            if(this.position.z < 97){
+                this.position.z += 1
+            }
+            if(this.position.z > 60 && this.position.y > -100){
+                this.position.y -= 0.5
+            }
+            else {
+                this.aller = false;
+                
+            }
+        
+        // if(!this.way){
+        //     this.position.z = 100
+        //     this.position.y = -100
+        //     if(this.position.z > -100){
+        //         this.position.z -= 1
+        //     }
+        //     if(this.position.z > 0 && this.position.y > -100){
+        //         this.position.y -= 0.5
+        //     }
+        //     else {
+        //         this.way = true;
+        //     }
+        // }
+        // }
     }
 
     /**

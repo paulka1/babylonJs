@@ -36,17 +36,34 @@ var PlayerCamera = /** @class */ (function (_super) {
      * Called on the scene starts.
      */
     PlayerCamera.prototype.onStart = function () {
+        var _this = this;
         // For the example, let's configure the keys of the camera using the @visibleInInspector decorator.
         this.keysUp = [this._forwardKey];
         this.keysDown = [this._backwardKey];
         this.keysLeft = [this._strafeLeftKey];
         this.keysRight = [this._strafeRightKey];
+        document.addEventListener("keydown", function (ev) {
+            if (ev.keyCode === 32) {
+                _this.position.y += 1;
+            }
+        });
     };
     /**
      * Called each frame.
      */
     PlayerCamera.prototype.onUpdate = function () {
-        // Nothing to do now...
+        // if(this.position.y < 0){
+        //     this.getScene().dispose();
+        //     this.getScene().getEngine().stopRenderLoop();
+        // }
+    };
+    PlayerCamera.prototype.gameOver = function () {
+        if (this.position.y < 0) {
+            this.getScene().dispose();
+            this.getScene().getEngine().stopRenderLoop();
+            return true;
+        }
+        return false;
     };
     /**
      * Called on the user clicks on the canvas.

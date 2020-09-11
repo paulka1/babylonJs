@@ -9,7 +9,10 @@
 		"mtl_shark41 (Normal).png",
 		"eau1.jpeg",
 		"route.jpeg",
-		"stratum-resource-pack-minecraft-pierre.jpg"
+		"stratum-resource-pack-minecraft-pierre.jpg",
+		"eauText.jpg",
+		"wall2.png",
+		"arrivé.png"
 	],
 	"cameras": [
 		"camera-2e391261-067a-4ec6-8b00-25d7e0738684.json"
@@ -24,16 +27,73 @@
 		},
 		{
 			"bindedMeshes": [
-				"d66c05ad-967f-4f69-a6fb-7d47281b641c"
+				"ddc5fd6f-f763-4743-9ecb-d5b812665b24"
 			],
+			"json": "mtl_shark41-1fc709f9-2d71-421a-b9f5-a3d24e9bf1b7.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [],
 			"json": "cube-965b4240-9156-4704-8e39-cc381d3c7123.json",
 			"isMultiMaterial": false
 		},
 		{
+			"bindedMeshes": [],
+			"json": "eau-629b2a88-c0ce-4958-affd-a764169f911c.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [],
+			"json": "route-b4d87d3f-1970-4d4e-97c2-d14222d7307f.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [],
+			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
+			"isMultiMaterial": false
+		},
+		{
 			"bindedMeshes": [
-				"ddc5fd6f-f763-4743-9ecb-d5b812665b24"
+				"036e9933-4652-44e2-8d67-a10588fac6bb",
+				"95867e58-d2b4-4847-a949-0f1b01fa21ac",
+				"b7ca044f-a3f5-4836-b432-db28cd848508"
 			],
-			"json": "mtl_shark41-1fc709f9-2d71-421a-b9f5-a3d24e9bf1b7.json",
+			"json": "route1-8f0274df-3d84-4ff0-825e-1ccf8377eab3.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [
+				"b87c0751-53e5-4782-88d9-0461e9457fe1",
+				"52326691-f14b-4b71-9457-b49402a875fc",
+				"9b2fd815-10d4-4c5c-9232-947efd36bc5f",
+				"57de71b7-c1f9-46ea-a5b8-fbc06fcf96e5",
+				"5be393e0-164d-423c-b9f4-451b43b759e9",
+				"e48345c5-9836-48bb-8afb-cde9b613b13a",
+				"ef6b29d3-3788-41ee-9eee-fe53d998c28a",
+				"b2ad0754-6920-4c4b-bf31-aabab7901d8c",
+				"81ec6c70-476e-4e93-b5f5-bb4bcb719d22"
+			],
+			"json": "ocean-2555eac3-b306-4631-ac0c-a82395850866.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [
+				"63bc80b1-ca80-4692-b0c8-efe62a8a5438",
+				"86731481-ac7d-4c35-be1c-514a6236d0c0",
+				"9f306b3a-ba40-42f5-88bd-40d776fc53df",
+				"6160eecd-5b50-4a89-9aaf-d9ffe040e476",
+				"43d01640-a5a4-401a-8a06-7ed59727454f",
+				"0c361597-fd24-40cf-87c4-e10745f8bb0d",
+				"c3d67b89-2c1e-4a46-8ea7-38c2c85c059e"
+			],
+			"json": "rr-601e5f51-43f9-46d8-aa75-e2920be71d9a.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [
+				"ec93770d-1400-4d40-8909-32223dc6000d"
+			],
+			"json": "succes-4b3a3d8d-365b-4210-84df-552f287180f5.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -44,58 +104,55 @@
 			"isMultiMaterial": false
 		},
 		{
-			"bindedMeshes": [],
-			"json": "ground-77eb899b-024f-405e-b240-9bb6e5cbe3c3.json",
-			"isMultiMaterial": false
-		},
-		{
-			"bindedMeshes": [
-				"b87c0751-53e5-4782-88d9-0461e9457fe1"
-			],
-			"json": "eau-629b2a88-c0ce-4958-affd-a764169f911c.json",
-			"isMultiMaterial": false
-		},
-		{
-			"bindedMeshes": [],
-			"json": "route-b4d87d3f-1970-4d4e-97c2-d14222d7307f.json",
-			"isMultiMaterial": false
-		},
-		{
 			"bindedMeshes": [
 				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
 			],
 			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
-			"isMultiMaterial": false
-		},
-		{
-			"bindedMeshes": [
-				"2e2fa617-df40-4db8-94f3-203c214849fe"
-			],
-			"json": "route1-8f0274df-3d84-4ff0-825e-1ccf8377eab3.json",
 			"isMultiMaterial": false
 		}
 	],
 	"textures": [
 		"mtl_shark41 (Specular Glossiness).png-404.json",
 		"mtl_shark41 (Occlusion).png-402.json",
+		"mtl_shark41 (Diffuse).png-403.json",
 		"mtl_shark41 (Normal).png-401.json",
+		"eau1.jpeg-242.json",
+		"route.jpeg-244.json",
+		"stratum-resource-pack-minecraft-pierre.jpg-449.json",
+		"eauText.jpg-1138.json",
 		"blaster_diffuse.jpg-83.json",
 		"parking.env-82.json",
 		"blaster_nmap.jpg-84.json",
-		"eau1.jpeg-242.json",
-		"mtl_shark41 (Diffuse).png-403.json",
-		"EnvironmentBRDFTexture0-17.json",
-		"route.jpeg-244.json",
-		"stratum-resource-pack-minecraft-pierre.jpg-449.json"
+		"wall2.png-2364.json",
+		"arrivé.png-756.json",
+		"EnvironmentBRDFTexture0-17.json"
 	],
 	"meshes": [
 		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
 		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"cylinder1-15fd31de-be39-4fe5-acd0-d8ddc138d9fc.json",
+		"chemin1-63bc80b1-ca80-4692-b0c8-efe62a8a5438.json",
+		"chemin1-ec93770d-1400-4d40-8909-32223dc6000d.json",
+		"chemin1-86731481-ac7d-4c35-be1c-514a6236d0c0.json",
 		"shark-ddc5fd6f-f763-4743-9ecb-d5b812665b24.json",
-		"chemin-2e2fa617-df40-4db8-94f3-203c214849fe.json"
+		"chemin1-9f306b3a-ba40-42f5-88bd-40d776fc53df.json",
+		"chemin1-43d01640-a5a4-401a-8a06-7ed59727454f.json",
+		"chemin1-6160eecd-5b50-4a89-9aaf-d9ffe040e476.json",
+		"ground-52326691-f14b-4b71-9457-b49402a875fc.json",
+		"chemin1-0c361597-fd24-40cf-87c4-e10745f8bb0d.json",
+		"ground-9b2fd815-10d4-4c5c-9232-947efd36bc5f.json",
+		"ground-57de71b7-c1f9-46ea-a5b8-fbc06fcf96e5.json",
+		"ground-5be393e0-164d-423c-b9f4-451b43b759e9.json",
+		"ground-e48345c5-9836-48bb-8afb-cde9b613b13a.json",
+		"ground-ef6b29d3-3788-41ee-9eee-fe53d998c28a.json",
+		"chemin1-c3d67b89-2c1e-4a46-8ea7-38c2c85c059e.json",
+		"ground-b2ad0754-6920-4c4b-bf31-aabab7901d8c.json",
+		"barre2-95867e58-d2b4-4847-a949-0f1b01fa21ac.json",
+		"ground-81ec6c70-476e-4e93-b5f5-bb4bcb719d22.json",
+		"barre1-036e9933-4652-44e2-8d67-a10588fac6bb.json",
+		"barr4-2de2a324-4c95-489a-9364-53d4fa0ef103.json",
+		"barre3-b7ca044f-a3f5-4836-b432-db28cd848508.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -341,13 +398,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 1.5183448534308681,
-			"beta": 1.4322399258748368,
-			"radius": 50.79501605435964,
+			"alpha": -18.842406848628528,
+			"beta": 1.1713856834724843,
+			"radius": 22.83850154699584,
 			"target": [
-				-0.4871593456774704,
-				-1.5507905656332355,
-				4.387304358250224
+				-5.633824076867659,
+				-3.3719864885672948,
+				14.790621346913845
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -377,9 +434,9 @@
 			],
 			"speed": 2,
 			"position": [
-				2.150371013143185,
-				5.464686621949839,
-				54.62633469721532
+				15.4065290962461,
+				5.509345878289537,
+				14.9410429284586
 			],
 			"upVector": [
 				0,

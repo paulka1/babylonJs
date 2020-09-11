@@ -1,4 +1,4 @@
-import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes } from "@babylonjs/core";
+import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Scene } from "@babylonjs/core";
 
 import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
 
@@ -37,13 +37,31 @@ export default class PlayerCamera extends FreeCamera {
         this.keysDown = [this._backwardKey];
         this.keysLeft = [this._strafeLeftKey];
         this.keysRight = [this._strafeRightKey];
+
+        document.addEventListener("keydown",(ev)=>{
+            if(ev.keyCode === 32){
+                this.position.y += 1;
+            }
+        })
     }
 
     /**
      * Called each frame.
      */
     public onUpdate(): void {
-        // Nothing to do now...
+        // if(this.position.y < 0){
+        //     this.getScene().dispose();
+        //     this.getScene().getEngine().stopRenderLoop();
+        // }
+    }
+
+    public gameOver(): boolean {
+        if(this.position.y < 0){
+            this.getScene().dispose();
+            this.getScene().getEngine().stopRenderLoop();
+            return true;
+        }
+        return false;
     }
 
     /**

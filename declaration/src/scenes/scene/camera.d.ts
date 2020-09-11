@@ -19,6 +19,7 @@ export default class PlayerCamera extends FreeCamera {
      * Called each frame.
      */
     onUpdate(): void;
+    gameOver(): boolean;
     /**
      * Called on the user clicks on the canvas.
      * Used to request pointer lock and launch a new ball.

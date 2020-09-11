@@ -2,6 +2,7 @@ import { Engine, Scene, SceneLoader } from "@babylonjs/core";
 import "@babylonjs/materials";
 
 import { runScene } from "./scenes/scene";
+import PlayerCamera from "./scenes/scene/camera";
 
 export class Game {
     /**
@@ -18,16 +19,16 @@ export class Game {
      */
     public constructor() {
         this.engine = new Engine(document.getElementById("renderCanvas") as HTMLCanvasElement, true);
-        this.scene = new Scene(this.engine);
-
         this._bindEvents();
         this._load();
     }
-
+    
     /**
      * Loads the first scene.
      */
-    private _load(): void {
+    public _load(): void {
+        
+        this.scene = new Scene(this.engine);
         const rootUrl = "./scenes/scene/";
 
         SceneLoader.Append(rootUrl, "scene.babylon", this.scene, () => {
@@ -42,7 +43,14 @@ export class Game {
                 runScene(this.scene, rootUrl);
 
                 // Render.
-                this.engine.runRenderLoop(() => this.scene.render());
+                this.engine.runRenderLoop(() => {
+                    this.scene.render()
+                    var rr :PlayerCamera = (this.scene.getCameraByName('camera') as PlayerCamera)
+                    if(rr.gameOver()){
+                        this._load();
+                    }
+                    });
+                
             });
         }, undefined, (_, message) => {
             console.error(message);

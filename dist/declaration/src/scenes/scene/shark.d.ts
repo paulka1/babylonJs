@@ -1,4 +1,4 @@
-import { Node } from "@babylonjs/core";
+import { Mesh } from "@babylonjs/core";
 /**
  * This represents a script that is attached to a node in the editor.
  * Available nodes are:
@@ -17,7 +17,8 @@ import { Node } from "@babylonjs/core";
  * The function "onInitialize" is called immediately after the constructor is called.
  * The functions "onStart" and "onUpdate" are called automatically.
  */
-export default class MyScript extends Node {
+export default class MyScript extends Mesh {
+    aller: boolean;
     /**
      * Override constructor.
      * @warn do not fill.

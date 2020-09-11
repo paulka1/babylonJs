@@ -6,7 +6,11 @@ import { Scene } from "@babylonjs/core";
  * Defines the map of all available scripts in the project.
  */
 export declare const scriptsMap: {
+    "src/scenes/scene/bloc.ts": any;
+    "src/scenes/scene/bloc1.1.ts": any;
+    "src/scenes/scene/blocMoove.ts": any;
     "src/scenes/scene/camera.ts": any;
+    "src/scenes/scene/player.ts": any;
     "src/scenes/scene/shark.ts": any;
 };
 /**

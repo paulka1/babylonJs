@@ -44,7 +44,11 @@ var tools_1 = require("../tools");
  * Defines the map of all available scripts in the project.
  */
 exports.scriptsMap = {
+    "src/scenes/scene/bloc.ts": require("./bloc"),
+    "src/scenes/scene/bloc1.1.ts": require("./bloc1.1"),
+    "src/scenes/scene/blocMoove.ts": require("./blocMoove"),
     "src/scenes/scene/camera.ts": require("./camera"),
+    "src/scenes/scene/player.ts": require("./player"),
     "src/scenes/scene/shark.ts": require("./shark"),
 };
 /**

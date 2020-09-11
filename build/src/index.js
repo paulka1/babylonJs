@@ -9,7 +9,6 @@ var Game = /** @class */ (function () {
      */
     function Game() {
         this.engine = new core_1.Engine(document.getElementById("renderCanvas"), true);
-        this.scene = new core_1.Scene(this.engine);
         this._bindEvents();
         this._load();
     }
@@ -18,6 +17,7 @@ var Game = /** @class */ (function () {
      */
     Game.prototype._load = function () {
         var _this = this;
+        this.scene = new core_1.Scene(this.engine);
         var rootUrl = "./scenes/scene/";
         core_1.SceneLoader.Append(rootUrl, "scene.babylon", this.scene, function () {
             _this.scene.executeWhenReady(function () {
@@ -29,7 +29,13 @@ var Game = /** @class */ (function () {
                 // Run the scene to attach scripts etc.
                 scene_1.runScene(_this.scene, rootUrl);
                 // Render.
-                _this.engine.runRenderLoop(function () { return _this.scene.render(); });
+                _this.engine.runRenderLoop(function () {
+                    _this.scene.render();
+                    var rr = _this.scene.getCameraByName('camera');
+                    if (rr.gameOver()) {
+                        _this._load();
+                    }
+                });
             });
         }, undefined, function (_, message) {
             console.error(message);
