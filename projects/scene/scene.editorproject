@@ -12,17 +12,22 @@
 		"stratum-resource-pack-minecraft-pierre.jpg",
 		"eauText.jpg",
 		"wall2.png",
-		"arrivé.png"
+		"arrivé.png",
+		"rouge.jpg",
+		"feu.jpg"
 	],
 	"cameras": [
 		"camera-2e391261-067a-4ec6-8b00-25d7e0738684.json"
 	],
 	"materials": [
 		{
-			"bindedMeshes": [
-				"c4024c20-1c4f-4be6-9abd-525e2a782174"
-			],
+			"bindedMeshes": [],
 			"json": "sky-cdc8b068-1ebd-4c87-8cb0-f48a85181271.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [],
+			"json": "eau-629b2a88-c0ce-4958-affd-a764169f911c.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -54,7 +59,28 @@
 		},
 		{
 			"bindedMeshes": [],
-			"json": "eau-629b2a88-c0ce-4958-affd-a764169f911c.json",
+			"json": "ball-0b776f6c-9111-499d-8207-1c8242d97719.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [
+				"ec93770d-1400-4d40-8909-32223dc6000d"
+			],
+			"json": "succes-4b3a3d8d-365b-4210-84df-552f287180f5.json",
+			"isMultiMaterial": false
+		},
+		{
+			"bindedMeshes": [
+				"c4024c20-1c4f-4be6-9abd-525e2a782174",
+				"9f306b3a-ba40-42f5-88bd-40d776fc53df",
+				"6160eecd-5b50-4a89-9aaf-d9ffe040e476",
+				"86731481-ac7d-4c35-be1c-514a6236d0c0",
+				"43d01640-a5a4-401a-8a06-7ed59727454f",
+				"3eeeefcb-9780-4a99-8302-c790b21c07f0",
+				"63bc80b1-ca80-4692-b0c8-efe62a8a5438",
+				"c3d67b89-2c1e-4a46-8ea7-38c2c85c059e"
+			],
+			"json": "rr-601e5f51-43f9-46d8-aa75-e2920be71d9a.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -74,29 +100,16 @@
 		},
 		{
 			"bindedMeshes": [
-				"f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c"
+				"ddc5fd6f-f763-4743-9ecb-d5b812665b24"
 			],
-			"json": "ball-0b776f6c-9111-499d-8207-1c8242d97719.json",
+			"json": "mtl_shark41-1fc709f9-2d71-421a-b9f5-a3d24e9bf1b7.json",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [
-				"9f306b3a-ba40-42f5-88bd-40d776fc53df",
-				"6160eecd-5b50-4a89-9aaf-d9ffe040e476",
-				"86731481-ac7d-4c35-be1c-514a6236d0c0",
-				"43d01640-a5a4-401a-8a06-7ed59727454f",
-				"3eeeefcb-9780-4a99-8302-c790b21c07f0",
-				"63bc80b1-ca80-4692-b0c8-efe62a8a5438",
-				"c3d67b89-2c1e-4a46-8ea7-38c2c85c059e"
+				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
 			],
-			"json": "rr-601e5f51-43f9-46d8-aa75-e2920be71d9a.json",
-			"isMultiMaterial": false
-		},
-		{
-			"bindedMeshes": [
-				"ec93770d-1400-4d40-8909-32223dc6000d"
-			],
-			"json": "succes-4b3a3d8d-365b-4210-84df-552f287180f5.json",
+			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -106,9 +119,9 @@
 		},
 		{
 			"bindedMeshes": [
-				"ddc5fd6f-f763-4743-9ecb-d5b812665b24"
+				"f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c"
 			],
-			"json": "mtl_shark41-1fc709f9-2d71-421a-b9f5-a3d24e9bf1b7.json",
+			"json": "feu-0371f62f-b5e1-471a-bdf8-db8b2b5fc79c.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -118,68 +131,70 @@
 		},
 		{
 			"bindedMeshes": [
-				"b6a89645-0d85-44c1-8bf8-b99b8670c51f"
+				"c3bd45bb-598d-441a-9973-a82e09f643c1"
 			],
-			"json": "blaster-71ce380f-e971-41c0-b580-e3e91b316c6f.json",
+			"json": "rouge-79ba58a5-203d-4cb8-8b2a-c2671721f9c8.json",
 			"isMultiMaterial": false
 		}
 	],
 	"textures": [
 		"route.jpeg-244.json",
-		"stratum-resource-pack-minecraft-pierre.jpg-449.json",
 		"eau1.jpeg-242.json",
-		"eauText.jpg-1138.json",
 		"wall2.png-2364.json",
+		"stratum-resource-pack-minecraft-pierre.jpg-449.json",
+		"eauText.jpg-1138.json",
 		"arrivé.png-756.json",
-		"EnvironmentBRDFTexture0-17.json",
 		"mtl_shark41 (Diffuse).png-403.json",
 		"mtl_shark41 (Occlusion).png-402.json",
 		"mtl_shark41 (Specular Glossiness).png-404.json",
+		"EnvironmentBRDFTexture0-17.json",
 		"mtl_shark41 (Normal).png-401.json",
-		"blaster_nmap.jpg-84.json",
+		"blaster_diffuse.jpg-83.json",
 		"parking.env-82.json",
-		"blaster_diffuse.jpg-83.json"
+		"blaster_nmap.jpg-84.json",
+		"feu.jpg-174.json",
+		"rouge.jpg-172.json"
 	],
 	"meshes": [
 		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
 		"timeBoard-9e2aa8cc-5075-4bbc-9b42-9ebd6e162751.json",
-		"chemin1-9f306b3a-ba40-42f5-88bd-40d776fc53df.json",
-		"chemin1-6160eecd-5b50-4a89-9aaf-d9ffe040e476.json",
 		"ground-9b2fd815-10d4-4c5c-9232-947efd36bc5f.json",
-		"ground-52326691-f14b-4b71-9457-b49402a875fc.json",
 		"ground-b2ad0754-6920-4c4b-bf31-aabab7901d8c.json",
+		"chemin1-6160eecd-5b50-4a89-9aaf-d9ffe040e476.json",
+		"chemin1-9f306b3a-ba40-42f5-88bd-40d776fc53df.json",
 		"chemin1-86731481-ac7d-4c35-be1c-514a6236d0c0.json",
+		"ground-52326691-f14b-4b71-9457-b49402a875fc.json",
 		"chemin1.1-43d01640-a5a4-401a-8a06-7ed59727454f.json",
-		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"shark-ddc5fd6f-f763-4743-9ecb-d5b812665b24.json",
-		"New Cube-19ee781d-5394-4c78-8e54-a3e3e993de75.json",
-		"ground-5be393e0-164d-423c-b9f4-451b43b759e9.json",
+		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"New Cube-e9842a2f-907e-4a43-b291-c804d6731c0d.json",
+		"New Cube-19ee781d-5394-4c78-8e54-a3e3e993de75.json",
 		"sol3-076a9fcc-8f35-4db0-9b89-ff40f32640a2.json",
+		"ground-5be393e0-164d-423c-b9f4-451b43b759e9.json",
 		"sol1-626fe8b0-7e60-4c02-b5bb-ddce8259d13e.json",
-		"ground-81ec6c70-476e-4e93-b5f5-bb4bcb719d22.json",
 		"sol1-5ca30d65-c2ba-44d1-9006-7e310e7c886f.json",
 		"New Cube-59c11f13-045c-4cf7-a486-43ae2493b6df.json",
 		"barre1-036e9933-4652-44e2-8d67-a10588fac6bb.json",
-		"barre2-95867e58-d2b4-4847-a949-0f1b01fa21ac.json",
+		"ground-81ec6c70-476e-4e93-b5f5-bb4bcb719d22.json",
 		"New Cube-982f50f3-fffe-4c52-bef3-72e5e92d8fab.json",
-		"sol3-f02c1919-dbca-43fe-824d-0fc20e26d9b5.json",
-		"sol2-ef19963f-7852-4ad7-b605-71e9a9c0226a.json",
-		"sol1-3312088e-422d-409e-8c15-c6041dbfa6a5.json",
+		"barre2-95867e58-d2b4-4847-a949-0f1b01fa21ac.json",
 		"barr4-2de2a324-4c95-489a-9364-53d4fa0ef103.json",
-		"sol4-4b958d2b-53f2-4457-a05d-2ebcd21147e6.json",
+		"sol3-f02c1919-dbca-43fe-824d-0fc20e26d9b5.json",
+		"sol1-3312088e-422d-409e-8c15-c6041dbfa6a5.json",
+		"sol2-ef19963f-7852-4ad7-b605-71e9a9c0226a.json",
 		"target-c3bd45bb-598d-441a-9973-a82e09f643c1.json",
 		"chemin1-ec93770d-1400-4d40-8909-32223dc6000d.json",
 		"chemin1-3eeeefcb-9780-4a99-8302-c790b21c07f0.json",
-		"New Cube-d1b334c0-4d43-4f9b-8fef-f58ccb641760.json",
+		"sol4-4b958d2b-53f2-4457-a05d-2ebcd21147e6.json",
 		"ground-e48345c5-9836-48bb-8afb-cde9b613b13a.json",
 		"ground-ef6b29d3-3788-41ee-9eee-fe53d998c28a.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"chemin1-63bc80b1-ca80-4692-b0c8-efe62a8a5438.json",
 		"barre3-b7ca044f-a3f5-4836-b432-db28cd848508.json",
-		"chemin1-c3d67b89-2c1e-4a46-8ea7-38c2c85c059e.json",
-		"ground-57de71b7-c1f9-46ea-a5b8-fbc06fcf96e5.json"
+		"chemin1-63bc80b1-ca80-4692-b0c8-efe62a8a5438.json",
+		"New Cube-d1b334c0-4d43-4f9b-8fef-f58ccb641760.json",
+		"ground-57de71b7-c1f9-46ea-a5b8-fbc06fcf96e5.json",
+		"chemin1-c3d67b89-2c1e-4a46-8ea7-38c2c85c059e.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -187,6 +202,9 @@
 		{
 			"json": "sun-13d8b045-9a4a-48c0-ab96-3584968502c2.json",
 			"shadowGenerator": "sun-13d8b045-9a4a-48c0-ab96-3584968502c2.json"
+		},
+		{
+			"json": "New Point Light-7224df39-ad61-4d1b-8222-610a61289b47.json"
 		}
 	],
 	"sounds": [],
@@ -425,13 +443,13 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 0.12237204031559823,
-			"beta": 0.766111587626723,
-			"radius": 25.064510534834472,
+			"alpha": 4.1222172494698865,
+			"beta": 0.6878073358674617,
+			"radius": 38.695414170492775,
 			"target": [
-				0,
-				0,
-				-7.264620780944824
+				-5.091588020324707,
+				6.120569229125977,
+				-7.149572372436523
 			],
 			"inertialAlphaOffset": 0,
 			"inertialBetaOffset": 0,
@@ -461,9 +479,9 @@
 			],
 			"speed": 2,
 			"position": [
-				17.24823272374756,
-				18.0617894806631,
-				-5.143319997350062
+				-18.76242092053013,
+				36.01818908617793,
+				-27.559759351586106
 			],
 			"upVector": [
 				0,

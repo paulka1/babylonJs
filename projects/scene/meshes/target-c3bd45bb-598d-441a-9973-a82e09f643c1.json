@@ -1,4 +1,5 @@
 {
+	"materials": [],
 	"meshes": [
 		{
 			"name": "target",
@@ -52,6 +53,7 @@
 			"isUnIndexed": false,
 			"geometryId": "e726a00b-bf4a-4cb0-929f-292c4ad5f7df",
 			"subMeshes": null,
+			"materialId": "79ba58a5-203d-4cb8-8b2a-c2671721f9c8",
 			"metadata": {
 				"isPickable": true,
 				"script": {
@@ -121,7 +123,6 @@
 			"indices": null
 		}
 	],
-	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

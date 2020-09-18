@@ -54,7 +54,7 @@ export default class PlayerCamera extends FreeCamera {
          this.onCollide = function (m) {
              if(m.metadata){
                 if(m.metadata.isBlock === true){
-                    this.position.z += 4;
+                    this.position.z += 7;
                 }  
                 if(m.metadata.isTouched === true){
                     this.position.z += 30;
@@ -97,7 +97,7 @@ export default class PlayerCamera extends FreeCamera {
         
         for(let i = 0; i < this.ballTable.length; i ++){
            if(this.ballTable[i].intersectsMesh(this._target)){
-               this.position.z -= 10;
+               this.position.z -= 7;
            }
         }
     }
