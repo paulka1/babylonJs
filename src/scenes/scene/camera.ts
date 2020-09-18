@@ -1,8 +1,13 @@
-import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Scene } from "@babylonjs/core";
+import { FreeCamera, PointerEventTypes, Mesh, PointerInfo, PhysicsImpostor, Vector3, KeyboardEventTypes, Camera, AbstractMesh } from "@babylonjs/core";
 
-import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent } from "../tools";
+import { fromChildren, visibleInInspector, onPointerEvent, onKeyboardEvent, fromScene } from "../tools";
 
 export default class PlayerCamera extends FreeCamera {
+    ballTable: AbstractMesh[] = [];
+
+    @fromScene("target")
+    private _target: Mesh;
+
     @fromChildren("ball")
     private _ball: Mesh;
 
@@ -38,25 +43,67 @@ export default class PlayerCamera extends FreeCamera {
         this.keysLeft = [this._strafeLeftKey];
         this.keysRight = [this._strafeRightKey];
 
-        document.addEventListener("keydown",(ev)=>{
-            if(ev.keyCode === 32){
-                this.position.y += 1;
-            }
-        })
+        document.addEventListener("keydown",(ev)=>{ 
+             if(ev.keyCode === 32){
+                 this.position.y += 2;
+             }
+         })
+
+         this["_needMoveForGravity"] = true;
+        
+         this.onCollide = function (m) {
+             if(m.metadata){
+                if(m.metadata.isBlock === true){
+                    this.position.z += 4;
+                }  
+                if(m.metadata.isTouched === true){
+                    this.position.z += 30;
+                }
+             }      
+         };
+        
+        // document.addEventListener("keydown",(ev)=>{
+        //     if(ev.keyCode === 32){
+        // this.getScene().getEngine().getDeltaTime()  
+        //     } 
+        // }
+        // document.addEventListener('keydown',(ev)=>
+        // {
+        //     if(ev.keyCode === 32)
+        //     {
+        //         this._i .set(0, 0.25, 0);
+        //     }
+        // });
+        // document.addEventListener("keydown",(ev)=>{
+        //     if(ev.keyCode === 32){
+        //         this.position.y += 2;
+        //         setTimeout(function(){
+        //             console.log("iioioioi")
+        //             this.position.y -= 2;
+        //             this.jump = true;
+        //         }, 1000);
+        //         console.log("iio111")
+        //         if(this.jump){
+        //             this.jump = false;
+        //         }
+        //     }
+        // })
     }
 
     /**
      * Called each frame.
      */
     public onUpdate(): void {
-        // if(this.position.y < 0){
-        //     this.getScene().dispose();
-        //     this.getScene().getEngine().stopRenderLoop();
-        // }
+        
+        for(let i = 0; i < this.ballTable.length; i ++){
+           if(this.ballTable[i].intersectsMesh(this._target)){
+               this.position.z -= 10;
+           }
+        }
     }
 
     public gameOver(): boolean {
-        if(this.position.y < 0){
+        if(this.position.y < 1){
             this.getScene().dispose();
             this.getScene().getEngine().stopRenderLoop();
             return true;
@@ -104,6 +151,8 @@ export default class PlayerCamera extends FreeCamera {
         const ballInstance = this._ball.createInstance("ballInstance");
         ballInstance.position.copyFrom(this._ball.getAbsolutePosition());
 
+        this.ballTable.push(ballInstance);
+    
         // Create physics impostor for the ball instance
         ballInstance.physicsImpostor = new PhysicsImpostor(ballInstance, PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
 

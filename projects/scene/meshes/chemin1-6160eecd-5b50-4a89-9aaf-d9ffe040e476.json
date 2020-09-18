@@ -4,13 +4,13 @@
 		{
 			"name": "chemin1",
 			"id": "6160eecd-5b50-4a89-9aaf-d9ffe040e476",
-			"uniqueId": 51,
+			"uniqueId": 14,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
 				0,
 				0,
-				-7.264620780944824
+				-4.9168267250061035
 			],
 			"rotationQuaternion": [
 				0,
@@ -21,7 +21,7 @@
 			"scaling": [
 				8,
 				7,
-				8
+				2
 			],
 			"pivotMatrix": {
 				"0": 1,
@@ -61,7 +61,31 @@
 			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
-				"script": {}
+				"script": {
+					"name": "None",
+					"properties": {
+						"_forwardKey": {
+							"type": "KeyMap",
+							"value": 122
+						},
+						"_backwardKey": {
+							"type": "KeyMap",
+							"value": 115
+						},
+						"_strafeLeftKey": {
+							"type": "KeyMap",
+							"value": 113
+						},
+						"_strafeRightKey": {
+							"type": "KeyMap",
+							"value": 100
+						},
+						"_ballForceFactor": {
+							"type": "number",
+							"value": 1
+						}
+					}
+				}
 			},
 			"instances": [],
 			"animations": [],

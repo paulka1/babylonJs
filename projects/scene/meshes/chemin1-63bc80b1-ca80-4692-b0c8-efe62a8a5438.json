@@ -4,13 +4,13 @@
 		{
 			"name": "chemin1",
 			"id": "63bc80b1-ca80-4692-b0c8-efe62a8a5438",
-			"uniqueId": 48,
+			"uniqueId": 112,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
 				0.04140915721654892,
 				0,
-				15.94289493560791
+				7.936222076416016
 			],
 			"rotationQuaternion": [
 				0,
@@ -62,7 +62,7 @@
 			"metadata": {
 				"isPickable": true,
 				"script": {
-					"name": "src/scenes/scene/blocMoove.ts"
+					"name": "None"
 				}
 			},
 			"instances": [],

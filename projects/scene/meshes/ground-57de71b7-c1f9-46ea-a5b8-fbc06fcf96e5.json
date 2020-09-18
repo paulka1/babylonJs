@@ -4,13 +4,13 @@
 		{
 			"name": "ground",
 			"id": "57de71b7-c1f9-46ea-a5b8-fbc06fcf96e5",
-			"uniqueId": 56,
+			"uniqueId": 113,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				3.0363065517774235,
+				2.844277556740993,
 				-3.342780878287268,
-				89.1994303792842
+				85.3333263397218
 			],
 			"rotationQuaternion": [
 				0,

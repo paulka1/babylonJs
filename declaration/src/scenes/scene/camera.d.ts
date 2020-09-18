@@ -1,5 +1,7 @@
-import { FreeCamera } from "@babylonjs/core";
+import { FreeCamera, AbstractMesh } from "@babylonjs/core";
 export default class PlayerCamera extends FreeCamera {
+    ballTable: AbstractMesh[];
+    private _target;
     private _ball;
     private _forwardKey;
     private _backwardKey;

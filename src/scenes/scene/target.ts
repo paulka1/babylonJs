@@ -19,6 +19,8 @@ import { Mesh } from "@babylonjs/core";
  * The functions "onStart" and "onUpdate" are called automatically.
  */
 export default class MyScript extends Mesh {
+    way: any = true;
+
     /**
      * Override constructor.
      * @warn do not fill.
@@ -38,33 +40,40 @@ export default class MyScript extends Mesh {
      * Called on the scene starts.
      */
     public onStart(): void {
-        document.addEventListener("keydown",(ev)=>{
-            if(ev.keyCode === 90){
-                this.position.z += 1;
-            }
-        });
-        document.addEventListener("keydown",(ev)=>{
-            if(ev.keyCode === 68){
-                this.position.x += 1;
-            }
-        });
-        document.addEventListener("keydown",(ev)=>{
-            if(ev.keyCode === 81){
-                this.position.x -= 1;
-            }
-        });
-        document.addEventListener("keydown",(ev)=>{
-            if(ev.keyCode === 83){
-                this.position.z -= 1;
-            }
-        });
+        if(this.position.x > 0){
+            this.way = true
+        }
+        else {
+            this.way = false;
+        };
+
+        this.metadata = {
+            isTouched : true
+        }
     }
 
     /**
      * Called each frame.
      */
     public onUpdate(): void {
-        // ...
+        if(this.way){
+            if(this.position.x < 3){
+                this.position.x += 0.4;
+    
+            }
+            else {
+                this.way = false;
+            }
+
+        }
+        if(!this.way){
+            if(this.position.x > -3){
+                this.position.x -= 0.4;
+            }
+            else {
+                this.way = true
+            }
+        }  
     }
 
     /**

@@ -1,21 +1,22 @@
 {
+	"materials": [],
 	"meshes": [
 		{
 			"name": "barr4",
 			"id": "2de2a324-4c95-489a-9364-53d4fa0ef103",
-			"uniqueId": 298,
+			"uniqueId": 65,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				-2.886152505874634,
-				5.32560920715332,
-				5.956243991851807
+				-2.884415439706403,
+				5.381526886494903,
+				5.893963173269428
 			],
 			"rotationQuaternion": [
-				0,
-				0,
-				0,
-				1
+				-0.006371118847443761,
+				-0.0001932628121259091,
+				-0.003598060796748746,
+				0.9999732123675213
 			],
 			"scaling": [
 				1,
@@ -53,9 +54,10 @@
 			"isUnIndexed": false,
 			"geometryId": "9484372c-e9c3-492f-ae72-f447fe78df72",
 			"subMeshes": null,
-			"physicsMass": 1,
+			"materialId": "8f0274df-3d84-4ff0-825e-1ccf8377eab3",
+			"physicsMass": 10,
 			"physicsFriction": 0.2,
-			"physicsRestitution": 1,
+			"physicsRestitution": 10,
 			"physicsImpostor": 7,
 			"metadata": {
 				"isPickable": true,
@@ -126,7 +128,6 @@
 			"indices": null
 		}
 	],
-	"materials": [],
 	"multiMaterials": [],
 	"lods": []
 }

@@ -62,8 +62,8 @@ var MyScript = /** @class */ (function (_super) {
      */
     MyScript.prototype.onUpdate = function () {
         if (this.way) {
-            if (this.position.y < 10) {
-                this.position.y += 1;
+            if (this.position.y < 3) {
+                this.position.y += 0.02;
             }
             else {
                 this.way = false;
@@ -71,7 +71,7 @@ var MyScript = /** @class */ (function (_super) {
         }
         if (!this.way) {
             if (this.position.y > 0) {
-                this.position.y -= 1;
+                this.position.y -= 0.02;
             }
             else {
                 this.way = true;

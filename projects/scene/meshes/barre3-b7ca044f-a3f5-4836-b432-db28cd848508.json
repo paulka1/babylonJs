@@ -4,19 +4,19 @@
 		{
 			"name": "barre3",
 			"id": "b7ca044f-a3f5-4836-b432-db28cd848508",
-			"uniqueId": 64,
+			"uniqueId": 78,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				0,
-				5.447470664978027,
-				9.208452224731445
+				-0.00005232702534226259,
+				5.364296989332783,
+				9.172446121426734
 			],
 			"rotationQuaternion": [
-				0,
-				0,
-				0,
-				1
+				-0.005660985337814406,
+				-0.0004904905329964345,
+				-0.0035308221452720785,
+				0.999977622729139
 			],
 			"scaling": [
 				1,
@@ -48,7 +48,7 @@
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": false,
+			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,

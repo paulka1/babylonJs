@@ -8,15 +8,15 @@
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				3.2294657230377197,
-				5.429477691650391,
-				13.207565307617188
+				3.216628949018481,
+				5.463187622721273,
+				13.496246624232123
 			],
 			"rotationQuaternion": [
-				0,
-				0,
-				0,
-				1
+				-0.003409820174779264,
+				-0.0013265155513844035,
+				-0.0019965073706504767,
+				0.9999913136828672
 			],
 			"scaling": [
 				1,
@@ -48,16 +48,16 @@
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": false,
+			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
 			"geometryId": "0de24caa-f66c-4be0-9fd3-7c474b02336c",
 			"subMeshes": null,
 			"materialId": "8f0274df-3d84-4ff0-825e-1ccf8377eab3",
-			"physicsMass": 1,
+			"physicsMass": 10,
 			"physicsFriction": 0.2,
-			"physicsRestitution": 1,
+			"physicsRestitution": 10,
 			"physicsImpostor": 7,
 			"metadata": {
 				"isPickable": true,

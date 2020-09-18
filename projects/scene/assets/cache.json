@@ -78,6 +78,11 @@
 	"Visual Scripts (Beta)": [],
 	"Scripts": [
 		{
+			"id": "ball.ts",
+			"key": "ball.ts",
+			"base64": "../css/images/ts.png"
+		},
+		{
 			"id": "bloc.ts",
 			"key": "bloc.ts",
 			"base64": "../css/images/ts.png"
@@ -90,6 +95,11 @@
 		{
 			"id": "blocMoove.ts",
 			"key": "blocMoove.ts",
+			"base64": "../css/images/ts.png"
+		},
+		{
+			"id": "blockTarget.ts",
+			"key": "blockTarget.ts",
 			"base64": "../css/images/ts.png"
 		},
 		{
@@ -110,6 +120,16 @@
 		{
 			"id": "shark.ts",
 			"key": "shark.ts",
+			"base64": "../css/images/ts.png"
+		},
+		{
+			"id": "target.ts",
+			"key": "target.ts",
+			"base64": "../css/images/ts.png"
+		},
+		{
+			"id": "time.ts",
+			"key": "time.ts",
 			"base64": "../css/images/ts.png"
 		}
 	],

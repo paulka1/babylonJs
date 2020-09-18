@@ -30,6 +30,7 @@ var PlayerCamera = /** @class */ (function (_super) {
     // @ts-ignore ignoring the super call as we don't want to re-init
     function PlayerCamera() {
         var _this = this;
+        _this.ballTable = [];
         return _this;
     }
     /**
@@ -44,21 +45,59 @@ var PlayerCamera = /** @class */ (function (_super) {
         this.keysRight = [this._strafeRightKey];
         document.addEventListener("keydown", function (ev) {
             if (ev.keyCode === 32) {
-                _this.position.y += 1;
+                _this.position.y += 2;
             }
         });
+        this["_needMoveForGravity"] = true;
+        this.onCollide = function (m) {
+            if (m.metadata) {
+                if (m.metadata.isBlock === true) {
+                    this.position.z += 4;
+                }
+                if (m.metadata.isTouched === true) {
+                    this.position.z += 30;
+                }
+            }
+        };
+        // document.addEventListener("keydown",(ev)=>{
+        //     if(ev.keyCode === 32){
+        // this.getScene().getEngine().getDeltaTime()  
+        //     } 
+        // }
+        // document.addEventListener('keydown',(ev)=>
+        // {
+        //     if(ev.keyCode === 32)
+        //     {
+        //         this._i .set(0, 0.25, 0);
+        //     }
+        // });
+        // document.addEventListener("keydown",(ev)=>{
+        //     if(ev.keyCode === 32){
+        //         this.position.y += 2;
+        //         setTimeout(function(){
+        //             console.log("iioioioi")
+        //             this.position.y -= 2;
+        //             this.jump = true;
+        //         }, 1000);
+        //         console.log("iio111")
+        //         if(this.jump){
+        //             this.jump = false;
+        //         }
+        //     }
+        // })
     };
     /**
      * Called each frame.
      */
     PlayerCamera.prototype.onUpdate = function () {
-        // if(this.position.y < 0){
-        //     this.getScene().dispose();
-        //     this.getScene().getEngine().stopRenderLoop();
-        // }
+        for (var i = 0; i < this.ballTable.length; i++) {
+            if (this.ballTable[i].intersectsMesh(this._target)) {
+                this.position.z -= 10;
+            }
+        }
     };
     PlayerCamera.prototype.gameOver = function () {
-        if (this.position.y < 0) {
+        if (this.position.y < 1) {
             this.getScene().dispose();
             this.getScene().getEngine().stopRenderLoop();
             return true;
@@ -99,12 +138,16 @@ var PlayerCamera = /** @class */ (function (_super) {
         // Create a new ball instance
         var ballInstance = this._ball.createInstance("ballInstance");
         ballInstance.position.copyFrom(this._ball.getAbsolutePosition());
+        this.ballTable.push(ballInstance);
         // Create physics impostor for the ball instance
         ballInstance.physicsImpostor = new core_1.PhysicsImpostor(ballInstance, core_1.PhysicsImpostor.SphereImpostor, { mass: 1, friction: 0.2, restitution: 0.2 });
         // Apply impulse on ball
         var force = this.getDirection(new core_1.Vector3(0, 0, 1)).multiplyByFloats(this._ballForceFactor, this._ballForceFactor, this._ballForceFactor);
         ballInstance.applyImpulse(force, ballInstance.getAbsolutePosition());
     };
+    __decorate([
+        tools_1.fromScene("target")
+    ], PlayerCamera.prototype, "_target", void 0);
     __decorate([
         tools_1.fromChildren("ball")
     ], PlayerCamera.prototype, "_ball", void 0);

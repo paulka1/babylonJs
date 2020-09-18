@@ -4,13 +4,13 @@
 		{
 			"name": "chemin1",
 			"id": "86731481-ac7d-4c35-be1c-514a6236d0c0",
-			"uniqueId": 49,
+			"uniqueId": 15,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				0,
-				0,
-				0
+				-8.881784197001252e-14,
+				0.014492376424031367,
+				30.625234603881836
 			],
 			"rotationQuaternion": [
 				0,

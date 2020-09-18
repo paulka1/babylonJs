@@ -1,10 +1,10 @@
 {
-	"tags": null,
+	"tags": "modified",
 	"url": "files/wall2.png",
 	"uOffset": 0,
 	"vOffset": 0,
-	"uScale": 1,
-	"vScale": 1,
+	"uScale": 10,
+	"vScale": 10,
 	"uAng": 0,
 	"vAng": 0,
 	"wAng": 0,

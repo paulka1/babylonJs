@@ -61,15 +61,14 @@ var MyScript = /** @class */ (function (_super) {
         else {
             this.way = false;
         }
+        this.metadata = {
+            isBlock: true
+        };
     };
     /**
      * Called each frame.
      */
     MyScript.prototype.onUpdate = function () {
-        // if(this.position.z != this.z){
-        //     this.way = null;
-        // }
-        console.log(this.way, "WAY");
         if (this.way) {
             if (this.position.x < 3) {
                 this.position.x += 0.1;

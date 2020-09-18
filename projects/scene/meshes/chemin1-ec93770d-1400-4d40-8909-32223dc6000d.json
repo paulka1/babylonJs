@@ -4,7 +4,7 @@
 		{
 			"name": "chemin1",
 			"id": "ec93770d-1400-4d40-8909-32223dc6000d",
-			"uniqueId": 47,
+			"uniqueId": 71,
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
@@ -61,7 +61,31 @@
 			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
-				"script": {}
+				"script": {
+					"name": "None",
+					"properties": {
+						"_forwardKey": {
+							"type": "KeyMap",
+							"value": 122
+						},
+						"_backwardKey": {
+							"type": "KeyMap",
+							"value": 115
+						},
+						"_strafeLeftKey": {
+							"type": "KeyMap",
+							"value": 113
+						},
+						"_strafeRightKey": {
+							"type": "KeyMap",
+							"value": 100
+						},
+						"_ballForceFactor": {
+							"type": "number",
+							"value": 1
+						}
+					}
+				}
 			},
 			"instances": [],
 			"animations": [],
